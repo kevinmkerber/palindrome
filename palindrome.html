@@ -1,0 +1,45 @@
+ <DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Palindrome</title>
+
+    <style>
+
+    </style>
+
+</head>
+
+
+<script>
+function palindrome(str) {
+  var lowerCaseStr = str.toLowerCase();
+  var cleanedUpStr = lowerCaseStr.replace(/[^a-z0-9]/gi, '');
+  var splitStr = cleanedUpStr.split("");
+  var reversediSplitStr = splitStr.reverse();
+  var reversedStr = reversediSplitStr.join("");
+  console.log(reversedStr);
+  if (cleanedUpStr === reversedStr) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+palindrome("eye");
+palindrome("kayak");
+palindrome("HelVetIca");
+palindrome("*123_&321^&");
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
