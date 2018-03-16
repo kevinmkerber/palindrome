@@ -16,7 +16,8 @@
 <script>
 function palindrome(str) {
   var lowerCaseStr = str.toLowerCase();
-  //this .replace has a regular expression that makes all characters not a-z or 0-9 erased. It uses gi (global, cases insensitive) so it does not stop after the first occurance
+  //this .replace has a regular expression that makes all characters not a-z or 0-9 erased. 
+  //It uses gi (global, cases insensitive) so it does not stop after the first occurance
   var cleanedUpStr = lowerCaseStr.replace(/[^a-z0-9]/gi, '');
   var splitStr = cleanedUpStr.split("");
   var reversediSplitStr = splitStr.reverse();
